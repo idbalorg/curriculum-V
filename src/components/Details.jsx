@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from './Heading'
+import style from './Details.module.css'
 
 const duty1 = [
   'Manage cash flow, including banking deposits, debit card transactions, returns and refunds.', 
@@ -44,8 +45,8 @@ function Experience({position, date, duties, orgName}) {
 
 function Education({institution, year, result, major, location}) {
   return(
-    <>
-    <div>
+    <div className={style.education}>
+    <div >
       <p><strong>{institution}</strong> {location}</p>
       <p>{year}</p>
     </div>
@@ -55,7 +56,7 @@ function Education({institution, year, result, major, location}) {
     </div>
     
     
-    </>
+    </div>
   )
 }
 
