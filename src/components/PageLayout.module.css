@@ -1,0 +1,5 @@
+.pageLayout{
+    display: flex;
+    margin: 5%;
+    gap: 2rem;
+}
